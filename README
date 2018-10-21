@@ -1,0 +1,22 @@
+Things 3 Plugin
+===============
+
+Installation
+============
+First build the Plugin JAR:
+- Clone the repo
+- Run ./graldew publishPlugin
+
+Add the plugin to IntelliJ:
+- Go to Plugins > Install from disk
+- Select the JAR created in the previous step
+
+Usage
+=====
+- Set the caret to anywhere on the TODO line
+- Under the Tools Menu find the Things3
+- Click on Add Todo
+
+Your todo item should be added under Inbox list in Things3
+
+

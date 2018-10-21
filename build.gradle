@@ -1,0 +1,22 @@
+plugins {
+    id 'org.jetbrains.intellij' version '0.3.11'
+}
+
+group 'com.orkunozbek'
+version '1.0.1-SNAPSHOT'
+
+apply plugin: 'idea'
+apply plugin: 'org.jetbrains.intellij'
+apply plugin: 'java'
+
+intellij {
+    version '2018.2.3'
+    plugins 'coverage'
+    pluginName 'Things3 Plugin'
+}
+patchPluginXml {
+    changeNotes """
+        Things3 plugin
+        Parse the // TODO lines from Java source and send it to the Things 3 app on the MAC OS 
+    """
+}

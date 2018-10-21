@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>com.orkunozbek.things-plugin</id>
+    <name>Things 3 Plugin</name>
+    <vendor email="orkunozbek15@gmail.com" url="">Orkun Ozbek</vendor>
+
+    <description><![CDATA[
+    This plugin generates things links from comments in the source using Things 3 URL Scheme
+    <a href="https://support.culturedcode.com/customer/en/portal/articles/2803573">See details</a>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+    
+
+    <actions>
+        <group id="com.orkunozbek.actions.GroupedActions" text="Things3" popup="true">
+            <add-to-group group-id="ToolsMenu" anchor="first" />
+            <action id="com.orkunozbek.ThingsAction" class="com.orkunozbek.ThingsAction" text="Things"
+                    description="Add todo">
+                <keyboard-shortcut first-keystroke="control alt A" second-keystroke="C" keymap="$default"/>c
+            </action>
+        </group>
+    </actions>
+</idea-plugin>
